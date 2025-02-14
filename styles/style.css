@@ -59,7 +59,6 @@ img {
 
 .nav--mobile {
     display: block;
-    position: relative;
 }
 
 .nav--mobile--active {
@@ -142,15 +141,27 @@ img {
 }
 
 .active__link {
+    text-decoration: none;
     color: var(--color-orange);
 }
 
 .other__link {
+    text-decoration: none;
     color: var(--color-blue);
 }
 
-.container__section {
-    margin: 0 8.33vw 8.33vw
+.section {
+    margin: 0 8.33vw 8.33vw;
+}
+
+.section__text__header {
+    font-size: var(--fs-3);
+    font-weight: var(--fw-2);
+    margin-bottom: 1.3125rem;
+}
+
+.section__text__paragraph {
+    margin-bottom: 1rem;
 }
 
 .banner {
@@ -161,10 +172,17 @@ img {
     place-items: center;
 }
 
-.banner__text {
+.banner__header {
     font-size: var(--fs-1);
     font-weight: var(--fw-1);
     color: var(--color-orange);
+}
+
+@media screen and (min-width: 48em) {
+    .section__text {
+        width: 66.66vw;
+        margin-inline: auto;
+    }
 }
 
 @media screen and (min-width: 64em) {
@@ -177,17 +195,32 @@ img {
     }
 }
 
+@media screen and (min-width: 70.25em) {
+    .section__text__paragraph {
+        margin-bottom: 1.25rem;
+    }
+}
+
 @media screen and (min-width: 80em) {
     .nav__item {
         margin-right: 1.5625rem;
+    }
+
+    .section__text {
+        width: 50vw;
     }
 }
 
 @media screen and (min-width: 90em) {
     :root {
         --fs-1: 6.25rem;
+        --fs-3: 1.875rem;
         --fs-4: 1.25rem;
         --fs-5: 1rem;
+    }
+
+    .section__text__header {
+        margin-bottom: 0.875rem;
     }
 }
 
