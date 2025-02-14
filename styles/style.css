@@ -14,8 +14,9 @@
     --fs-4: 1rem;
     --fs-5: 0.875rem;
     --fs-6: 0.875rem;
-    --fw-1: 500;
-    --fw-2: 400;
+    --fw-1: 700;
+    --fw-2: 500;
+    --fw-3: 400;
     --border: 2px solid var(--color-gray);
 }
 
@@ -27,6 +28,7 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: var(--fs-4);
+    font-weight: var(--fw-3);
     background-color: var(--color-gray);
 }
 
@@ -40,10 +42,11 @@ img {
     height: auto;
 }
 
-.header {
+.container {
     background-color: var(--color-white);
     max-width: 100rem;
     margin-inline: auto;
+    overflow: auto;
 }
 
 .nav {
@@ -78,7 +81,7 @@ img {
 .nav__list--mobile {
     display: none;
     position: absolute;
-    top: calc(4.50rem + 2px);
+    top: 4.50rem;
     left: 0;
     background-color: var(--color-blue);
     width: 100%;
@@ -118,7 +121,7 @@ img {
 .nav__link {
     text-decoration: none;
     color: var(--color-black);
-    font-weight: 500;
+    font-weight: var(--fw-2);
 }
 
 .nav__link--mobile {
@@ -131,7 +134,7 @@ img {
     font: inherit;
     padding: 0;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: var(--fw-2);
 }
 
 .nav__link--sm {
@@ -144,6 +147,24 @@ img {
 
 .other__link {
     color: var(--color-blue);
+}
+
+.container__section {
+    margin: 0 8.33vw 8.33vw
+}
+
+.banner {
+    min-height: 100vh;
+    background-image: url("../assets/images/speaker-wall.jpg");
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.banner__text {
+    font-size: var(--fs-1);
+    font-weight: var(--fw-1);
+    color: var(--color-orange);
 }
 
 @media screen and (min-width: 64em) {
@@ -164,6 +185,7 @@ img {
 
 @media screen and (min-width: 90em) {
     :root {
+        --fs-1: 6.25rem;
         --fs-4: 1.25rem;
         --fs-5: 1rem;
     }
