@@ -29,10 +29,11 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: var(--fs-4);
     font-weight: var(--fw-3);
+    line-height: 1.5;
     background-color: var(--color-gray);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
@@ -140,12 +141,12 @@ img {
     font-size: var(--fs-5);
 }
 
-.active__link {
+.active-link {
     text-decoration: none;
     color: var(--color-orange);
 }
 
-.other__link {
+.other-link {
     text-decoration: none;
     color: var(--color-blue);
 }
@@ -154,13 +155,13 @@ img {
     margin: 0 min(8.33rem, 8.33vw) min(8.33rem, 8.33vw);
 }
 
-.section__text__header {
+.section--text__header {
     font-size: var(--fs-3);
     font-weight: var(--fw-2);
     margin-bottom: 1.3125rem;
 }
 
-.section__text__paragraph {
+.section--text__paragraph {
     margin-bottom: 1rem;
 }
 
@@ -178,84 +179,179 @@ img {
     color: var(--color-orange);
 }
 
-.section__complex {
+.section--complex {
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.section__complex--single-image {
+.section--complex--single-image {
     height: min(58.33rem, 58.33vw);
 }
 
-.section__complex--multiple-image {
+.section--complex--multiple-image {
     height: min(75rem, 75vw);
 }
 
-.section__complex--right {
+.section--complex--right {
     margin-right: 0;
 }
 
-.section__complex--left {
+.section--complex--left {
     margin-left: 0;
     justify-content: end;
 }
 
-.complex__background {
+.section--complex__background {
     width: min(58.33rem, 58.33vw);
     height: 100%;
     position: absolute;
 }
 
-.complex__background--1 {
+.section--complex__background--1 {
     right: 0;
     background-color: var(--color-yellow);
 }
 
-.complex__background--2 {
+.section--complex__background--2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--color-purple);
 }
 
-.complex__background--3 {
+.section--complex__background--3 {
     left: 0;
     background-color: var(--color-green);
 }
 
-.complex__image {
+.section--complex__image {
     position: relative;
     object-fit: cover;
 }
 
-.complex__image--big {
+.section--complex__image--big {
     width: min(41.66rem, 41.66vw);
     height: min(41.66rem, 41.66vw);
 }
 
-.complex__image--small {
+.section--complex__image--small {
     width: min(33.33rem, 33.33vw);
     height: min(25rem, 25vw);
 }
 
-.complex__image__margin--left {
+.section--complex__image__margin--left {
     margin-left: min(8.33rem, 8.33vw);
 }
 
-.complex__image__margin--top {
+.section--complex__image__margin--top {
     margin-top: min(8.33rem, 8.33vw);
 }
 
-.job__teaser__text__container {
+.section__job__teaser__text__container {
     padding: min(8.33rem, 8.33vw);
     display: grid;
     place-items: center;
     background-color: var(--color-light-blue);
 }
 
+.footer {
+    border-top: var(--border);
+}
+
+.section--footer {
+    margin-top: min(8.33rem, 8.33vw);
+}
+
+.section--footer__header {
+    font-size: var(--fs-2);
+    font-weight: var(--fw-2);
+    margin-bottom: min(4.16rem, 4.16vw);
+}
+
+.section--footer__container {
+    display: grid;
+    row-gap: 4.16667vw;
+    column-gap: 0.625rem;
+    margin-bottom: 4.16667vw;;
+}
+
+.section--footer__nav__header {
+    font-weight: var(--fw-2);
+}
+
+.section--footer__nav__paragraph {
+    margin-bottom: 1.25rem;
+}
+
+.section--footer__nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section--footer__nav__link {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.section--footer__nav__input__group{
+    display: flex;
+}
+
+.section--footer__nav__input {
+    font: inherit;
+    border: none;
+    background-color: var(--color-gray);
+    padding: 0.4rem 0.75rem;
+    width: 100%;
+}
+
+.section--footer__nav__button {
+    font: inherit;
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 0.35rem 1.5rem;
+    text-wrap: nowrap;
+}
+
+.social-links {
+    margin: 0;
+    padding: 0;
+    margin-top: 1.25rem;
+    list-style-type: none;
+    display: flex;
+}
+
+.social-logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+.section--footer__nav__select {
+    font: inherit;
+    font-size: var(--fs-6);
+    border: none;
+    background-color: var(--color-gray);
+    padding: 0.4rem 0.75rem;
+}
+
+.section--footer__small__nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section--footer__small__nav__link {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-2);
+}
+
 @media screen and (min-width: 48em) {
-    .section__text {
+    .section--text {
         width: 66.66vw;
         margin-inline: auto;
     }
@@ -269,10 +365,35 @@ img {
     .nav--mobile {
         display: none;
     }
+
+    .section--footer__container {
+        grid-template-columns: 3fr 3fr 4fr;
+    }
+
+    .section--footer__nav:nth-child(1) {
+        order: 1;
+    }
+    
+    .section--footer__nav:nth-child(4) {
+        order: 2;
+    }
+    
+    .section--footer__nav:nth-child(5) {
+        order: 3;
+        grid-column: 2 / span 2;
+    }
+
+    .section--footer__small__nav__list {
+        display: flex;
+    }
+
+    .section--footer__small__nav__item {
+        margin-right: 0.875rem;
+    }
 }
 
 @media screen and (min-width: 70.25em) {
-    .section__text__paragraph {
+    .section--text__paragraph {
         margin-bottom: 1.25rem;
     }
 }
@@ -282,7 +403,7 @@ img {
         margin-right: 1.5625rem;
     }
 
-    .section__text {
+    .section--text {
         width: 50vw;
     }
 
@@ -290,13 +411,13 @@ img {
         display: flex;
     }
 
-    .job__teaser__image {
+    .section__job__teaser__image {
         width: min(41.66rem, 41.66vw);
         height: min(41.66rem, 41.66vw);
         object-fit: cover;
     }
     
-    .job__teaser__text__container {
+    .section__job__teaser__text__container {
         width: min(41.66rem, 41.66vw);
         height: min(41.66rem, 41.66vw);
     }
@@ -305,12 +426,13 @@ img {
 @media screen and (min-width: 90em) {
     :root {
         --fs-1: 6.25rem;
+        --fs-2: 2.8125rem;
         --fs-3: 1.875rem;
         --fs-4: 1.25rem;
         --fs-5: 1rem;
     }
 
-    .section__text__header {
+    .section--text__header {
         margin-bottom: 0.875rem;
     }
 }
