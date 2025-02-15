@@ -151,7 +151,7 @@ img {
 }
 
 .section {
-    margin: 0 8.33vw 8.33vw;
+    margin: 0 min(8.33rem, 8.33vw) min(8.33rem, 8.33vw);
 }
 
 .section__text__header {
@@ -176,6 +176,82 @@ img {
     font-size: var(--fs-1);
     font-weight: var(--fw-1);
     color: var(--color-orange);
+}
+
+.section__complex {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.section__complex--single-image {
+    height: min(58.33rem, 58.33vw);
+}
+
+.section__complex--multiple-image {
+    height: min(75rem, 75vw);
+}
+
+.section__complex--right {
+    margin-right: 0;
+}
+
+.section__complex--left {
+    margin-left: 0;
+    justify-content: end;
+}
+
+.complex__background {
+    width: min(58.33rem, 58.33vw);
+    height: 100%;
+    position: absolute;
+}
+
+.complex__background--1 {
+    right: 0;
+    background-color: var(--color-yellow);
+}
+
+.complex__background--2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--color-purple);
+}
+
+.complex__background--3 {
+    left: 0;
+    background-color: var(--color-green);
+}
+
+.complex__image {
+    position: relative;
+    object-fit: cover;
+}
+
+.complex__image--big {
+    width: min(41.66rem, 41.66vw);
+    height: min(41.66rem, 41.66vw);
+}
+
+.complex__image--small {
+    width: min(33.33rem, 33.33vw);
+    height: min(25rem, 25vw);
+}
+
+.complex__image__margin--left {
+    margin-left: min(8.33rem, 8.33vw);
+}
+
+.complex__image__margin--top {
+    margin-top: min(8.33rem, 8.33vw);
+}
+
+.job__teaser__text__container {
+    padding: min(8.33rem, 8.33vw);
+    display: grid;
+    place-items: center;
+    background-color: var(--color-light-blue);
 }
 
 @media screen and (min-width: 48em) {
@@ -208,6 +284,21 @@ img {
 
     .section__text {
         width: 50vw;
+    }
+
+    .section__job__teaser {
+        display: flex;
+    }
+
+    .job__teaser__image {
+        width: min(41.66rem, 41.66vw);
+        height: min(41.66rem, 41.66vw);
+        object-fit: cover;
+    }
+    
+    .job__teaser__text__container {
+        width: min(41.66rem, 41.66vw);
+        height: min(41.66rem, 41.66vw);
     }
 }
 
