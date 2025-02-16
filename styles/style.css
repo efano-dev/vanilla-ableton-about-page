@@ -280,10 +280,6 @@ img {
     font-weight: var(--fw-2);
 }
 
-.section--footer__nav__paragraph {
-    margin-bottom: 1.25rem;
-}
-
 .section--footer__nav__list {
     list-style-type: none;
     margin: 0;
@@ -297,6 +293,7 @@ img {
 
 .section--footer__nav__input__group{
     display: flex;
+    margin-top: 1.25rem;
 }
 
 .section--footer__nav__input {
@@ -309,6 +306,7 @@ img {
 
 .section--footer__nav__button {
     font: inherit;
+    font-weight: var(--fw-2);
     border: none;
     background-color: var(--color-blue);
     color: var(--color-white);
@@ -332,6 +330,9 @@ img {
 .section--footer__nav__select {
     font: inherit;
     font-size: var(--fs-6);
+    font-weight: var(--fw-2);
+    max-width: 12.5rem;
+    margin-top: 1.25rem;
     border: none;
     background-color: var(--color-gray);
     padding: 0.4rem 0.75rem;
