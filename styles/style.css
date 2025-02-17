@@ -271,9 +271,9 @@ img {
 
 .nav-bottom__container {
     display: grid;
-    row-gap: 4.16667vw;
+    row-gap: min(4.16rem, 4.16vw);
     column-gap: 0.625rem;
-    margin-bottom: 4.16667vw;;
+    margin-bottom: min(4.16rem, 4.16vw);
 }
 
 .fs-4 {
