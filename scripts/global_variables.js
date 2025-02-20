@@ -1,0 +1,1 @@
+export const webPageURL = "https://efano-dev.github.io/vanilla-ableton-about-page/"

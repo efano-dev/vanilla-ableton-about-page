@@ -1,3 +1,11 @@
+import { webPageURL } from "./global_variables.js";
+
+const anchorTags = document.getElementsByTagName("a");
+
+[...anchorTags].map(function(anchorTag) {
+    anchorTag.href = webPageURL;
+})
+
 const navMobileMenu = document.getElementById("navMobileMenu");
 const navMobileList = document.getElementById("navMobileList");
 const navMobile = document.getElementById("navMobile");
