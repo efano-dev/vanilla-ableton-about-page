@@ -1,1 +1,1 @@
-export const webPageURL = "https://efano-dev.github.io/vanilla-ableton-about-page/"
+export const webPageURL = "https://efano-dev.github.io/vanilla-ableton-about-page/";
