@@ -108,16 +108,6 @@ img {
     margin-left: 1.25rem;
 }
 
-.nav__logo {
-    width: 2rem;
-    height: 2rem;
-    fill: var(--color-black);
-}
-
-.nav__logo--mobile {
-    fill: var(--color-white);
-}
-
 .nav__item--right {
     margin-left: auto;
 }

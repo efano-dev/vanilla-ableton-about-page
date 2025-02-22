@@ -14,6 +14,6 @@ const navMobileLogo = document.getElementById("navMobileLogo");
 navMobileMenu.addEventListener("click", (event) => {
     navMobile.classList.toggle("nav--mobile--active");
     navMobileMenu.classList.toggle("nav__link--mobile");
-    navMobileLogo.classList.toggle("nav__logo--mobile");
+    navMobileLogo.src = "./assets/images/nav-logo-white.svg";
     navMobileList.classList.toggle("nav__list--mobile--active");
 });
